@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=boska@500,300&f[]=satoshi@500,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <title>MyPortfolio</title>
+  </head>
+  <body>
+    <div class="parallax">
+      <h1>Welcome to my Portfolio</h1>
+      <p>Michael Cebrian</p>
+    </div>
+
+    <div class="text">
+      <a href="#bio">
+        <p>Scroll <span class="material-symbols-outlined"> south </span></p>
+      </a>
+    </div>
+
+    <div class="parallax2" id="bio">
+      <div class="modal-type-container">
+        <div class="container">
+          <div class="left-wrapper">
+            <img
+              id="imageContainer"
+              src="images/andrej-lisakov-fGZ2x8wFxC0-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="right-wrapper">
+            <div class="header">
+              <h3>About me:</h3>
+            </div>
+
+            <ol>
+              <li>
+                <a href="slam/Cebrian.html" id="firstLink">
+                  <span
+                    class="iconify"
+                    data-icon="mdi:zodiac-virgo"
+                    data-width="30"
+                    data-height="30"
+                  ></span
+                  >Michael Cebrian
+                </a>
+              </li>
+              <li>
+                <a href="slam/Allie.html" id="secondLink">
+                  <span
+                    class="iconify"
+                    data-icon="mdi:zodiac-cancer"
+                    data-width="30"
+                    data-height="30"
+                  ></span
+                  >Projects and Quizzes
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const firstLink = document.getElementById("firstLink");
+      const secondLink = document.getElementById("secondLink");
+      const imageContainer = document.getElementById("imageContainer");
+
+      firstLink.addEventListener("mouseover", function () {
+        imageContainer.src = "images/IMG_7860_edited.jpg";
+      });
+      firstLink.addEventListener("mouseleave", function () {
+        imageContainer.src = "images/andrej-lisakov-fGZ2x8wFxC0-unsplash.jpg";
+      });
+
+      secondLink.addEventListener("mouseover", function () {
+        imageContainer.src =
+          "https://scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-6/279293626_3193547027558463_1358401504549386690_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5b7eaf&_nc_eui2=AeHqp5DCQt3EuzIDhLha00prjSWYLCI-nYKNJZgsIj6dgnN7vaCIU-Ffz56PD0CEIagAqENRD0_uMI-_2O3Xwmd6&_nc_ohc=nqvFidQUhZoAX8iyLaJ&_nc_ht=scontent.fmnl9-4.fna&oh=00_AfDoBR65gFuk2CRoE4HxvB4z0fqVOwqO9mihCo6V3SICWA&oe=6477806D";
+      });
+      secondLink.addEventListener("mouseleave", function () {
+        imageContainer.src = "images/andrej-lisakov-fGZ2x8wFxC0-unsplash.jpg";
+      });
+    </script>
+  </body>
+</html>

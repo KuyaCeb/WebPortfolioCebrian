@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--clr-600) var(--clr-200);
+}
+
+:root {
+  --ff-header: "Boska", serif;
+  --ff-copy: "Satoshi", sans-serif;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --clr-200: hsl(66, 15%, 63%);
+  --clr-300: hsl(270, 1%, 58%);
+  --clr-400: hsl(35, 57%, 45%);
+  --clr-500: hsl(32, 32%, 36%);
+  --clr-600: hsl(26, 33%, 19%);
+  --clr-600-alpha: hsla(26, 33%, 19%, 80%);
+  --clr-michael:	hsl(350, 100%, 88%);
+  --padding-block: 2rem;
+  --fs-base: 16px;
+  --fs-large: 3.052rem;
+  --fs-medium: 1.953rem;
+  --fs-small: 1.25rem;
+}
+
+html {
+  font-size: var(--fs-base);
+  font-family: var(--ff-copy);
+  color: var(--clr-600);
+  scroll-behavior: smooth;
+}
+
+body .parallax {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/bg.gif");
+  background-color: var(--clr-400);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 90vh;
+  width: 100%;
+}
+body .parallax {
+  display: grid;
+  place-content: center;
+  min-height: 90vh;
+}
+.parallax h1 {
+  text-transform: uppercase;
+  color: white;
+  font-family: var(--ff-header);
+  font-size: var(--fs-large);
+}
+.parallax p {
+  font-family: var(--ff-copy);
+  font-size: var(--fs-small);
+  color: white;
+}
+body .parallax2 {
+  background-image: url(https://wallup.net/wp-content/uploads/2017/03/28/446401-Firewatch-video_games-landscape.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  padding-top: 25px;
+  display: grid;
+  place-content: center;
+}
+
+body .parallax2 h2 {
+  text-align: center;
+  padding: 25px;
+  color: white;
+}
+body .parallax2 .modal-type-container {
+  display: grid;
+  place-content: center;
+}
+body .parallax2 .modal-type-container .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--clr-600-alpha);
+  width: 45rem;
+  height: 30rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+body .parallax2 .modal-type-container .container .left-wrapper img {
+  width: 20rem;
+}
+/* body .parallax2 .modal-type-container .container .left-wrapper #imageContainer {
+  transition: img 1sec ease-in-out;
+} */
+body .parallax2 .modal-type-container .container .right-wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+}
+body .parallax2 .modal-type-container .container .right-wrapper .header {
+  display: flex;
+  justify-content: center;
+}
+body .parallax2 .modal-type-container .container .right-wrapper .header h3 {
+  color: white;
+}
+body .parallax2 .modal-type-container .container .right-wrapper ol {
+  margin-top: 25px;
+  list-style: none;
+  display: flex;
+  margin-inline: auto;
+}
+body .parallax2 .modal-type-container .container .right-wrapper ol li {
+  padding-block: 25px;
+  padding-inline: 25px;
+}
+body .parallax2 .modal-type-container .container .right-wrapper ol li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+body .parallax2 .modal-type-container .container .right-wrapper ol li a:hover {
+  color: var(--clr-400);
+}
+body .text {
+  background-color: var(--clr-200);
+  padding: 1.8rem;
+  display: grid;
+  place-content: center;
+}
+body .text a {
+  text-decoration: none;
+  color: inherit;
+}
+body .text a p {
+  display: flex;
+  align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
